@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: sans-serif;
+    background-image: url(./assets/bk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+:root {
+    --color-white: #fff;
+    --color-black: #000;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    color: var(--color-white);
+    margin: 2rem;
+}
+
+.select-coins-1,
+.select-coins-2,
+.input-valor {
+    width: 10rem;
+    height: 2rem;
+    background-color: var(--color-white);
+    outline: none;
+}
+
+.inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputs>* {
+    margin: 1rem;
+}
+
+.inputs>.input-valor>input {
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    padding: 0.4rem;
+    outline: none;
+    border: none;
+}
+
+img {
+    width: 2rem;
+}
+
+
+.result-contain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-result {
+    width: 30rem;
+    height: 20rem;
+    margin: 4rem;
+    background-color: var(--color-white);
+}
+
+.button-result-contain {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-result {
+    width: 12rem;
+    height: 4rem;
+    margin-top: 2rem;
+}
+
+.button-result>button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.titles-coins {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+}
+
+.result-text {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.result-text>span {
+    margin: 3rem 1rem 0 1rem;
+    font-size: 3rem;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.3);
+    color: var(--color-white);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    margin: auto;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none;
+}

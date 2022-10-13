@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <h1>CONVERSOR DE MOEDAS</h1>
+        </div>
+    </header>
+    <main>
+        <div class="inputs">
+            <div class="input-valor">
+                <input type="number" name="valor" id="input-valor" placeholder="Valor" value="">
+            </div>
+            <select name="coins" class="select-coins-1" onchange="setCoinSelected()" id="selectOne">
+                <option value="USD">Dólar Americano</option>
+                <option value="EUR">Euro</option>
+                <option value="BRL" selected>Real</option>
+            </select>
+            <img src="./assets/icons8-flecha-80.png" alt="">
+            <select name="coins" class="select-coins-2" id="selectTwo" onchange="setCoinSelected()">
+                <option value="USD" selected>Dólar Americano</option>
+                <option value="EUR">Euro</option>
+                <option value="BRL">Real</option>
+            </select>
+
+        </div>
+        <div class="result-contain">
+            <div class="box-result">
+                <div class="titles-coins">
+                    <span class="titles-coins-1">BRL</span>
+                    <span class="titles-coins-2">USD</span>
+                </div>
+                <div class="result-text">
+                    <span class="valueOne">0.00</span><span> = </span><span class="valueTwo">0.00</span>
+                </div>
+                <div class="button-result-contain">
+                    <div class="button-result">
+                        <button onclick="convertCoin()">Converter</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="descricao">
+            <h2>
+                Desenvolvido com <span style="color:red"> ❤ </span> Por Luis Felipe
+            </h2>
+        </div>
+
+        <div class="logos">
+            <a target="_blank" href="https://github.com/LuisFelipe777"><img src="assets/Icons/github.png"></img></a>
+            <a target="_blank" href="https://www.instagram.com/l.felipe777/"><img
+                    src="assets/Icons/intagram.png"></img></a>
+            <a target="_blank" href="https://www.linkedin.com/in/luis-felipe-farias-rodrigues-a60a71204/"><img
+                    src="assets/Icons/linkedlin.png"></img></a>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
